@@ -1,0 +1,16 @@
+{
+  "siteName": "My Awesome Site",
+  "navigation": [
+    {
+      "label": "Home",
+      "href": "/"
+    },
+    {
+      "label": "About",
+      "href": "/about"
+    }
+  ],
+  "footer": {
+    "copyright": "© 2024 My Site"
+  }
+}

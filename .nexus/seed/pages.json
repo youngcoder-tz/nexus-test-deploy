@@ -1,0 +1,20 @@
+[
+  {
+    "slug": "home",
+    "title": "Welcome to Our Site",
+    "content": "This is the home page content.",
+    "seo": {
+      "title": "Home Page",
+      "description": "Welcome to our amazing website"
+    }
+  },
+  {
+    "slug": "about",
+    "title": "About Us",
+    "content": "Learn more about our company.",
+    "seo": {
+      "title": "About Page",
+      "description": "Learn about our company and mission"
+    }
+  }
+]

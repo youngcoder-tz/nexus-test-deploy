@@ -1,0 +1,14 @@
+[
+  {
+    "title": "First Blog Post",
+    "content": "This is the content of the first blog post.",
+    "author": "Admin",
+    "published": true
+  },
+  {
+    "title": "Second Blog Post",
+    "content": "This is another blog post example.",
+    "author": "Admin",
+    "published": true
+  }
+]
