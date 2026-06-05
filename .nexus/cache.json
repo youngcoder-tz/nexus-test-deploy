@@ -1,0 +1,19 @@
+{
+  "pages": [],
+  "collections": {},
+  "globals": {
+    "name": "jom web",
+    "subdomain": "jom-web",
+    "liveUrl": null,
+    "type": "WEBSITE"
+  },
+  "meta": {
+    "pulledAt": "2026-04-29T15:02:18.493Z",
+    "projectId": "cmoama8r2001nlm09oj0pd6v0",
+    "apiUrl": "http://localhost:3001",
+    "count": {
+      "pages": 0,
+      "collections": 0
+    }
+  }
+}

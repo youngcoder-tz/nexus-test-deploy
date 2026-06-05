@@ -1,0 +1,1383 @@
+{
+  "schemaVersion": "5.0",
+  "project": "Kipazi_Fusion_Production",
+  "lastPublished": "2026-01-02T12:00:00Z",
+  "lastModified": "2026-01-02T11:45:00Z",
+  "version": "v5.2.1",
+  "config": {
+    "siteName": "Kipazi Fusion",
+    "tagline": "Culinary Engineering Meets Swahili Heritage",
+    "branding": {
+      "primaryColor": "#06b6d4",
+      "secondaryColor": "#8b5cf6",
+      "accentColor": "#ff6b6b",
+      "successColor": "#10b981",
+      "warningColor": "#f59e0b",
+      "fontFamily": {
+        "primary": "Inter, sans-serif",
+        "secondary": "Playfair Display, serif",
+        "monospace": "JetBrains Mono, monospace"
+      },
+      "borderRadius": {
+        "sm": "0.5rem",
+        "md": "1rem",
+        "lg": "2rem",
+        "xl": "3rem"
+      },
+      "shadows": {
+        "sm": "0 2px 4px rgba(0,0,0,0.1)",
+        "md": "0 10px 20px rgba(0,0,0,0.15)",
+        "lg": "0 20px 40px rgba(0,0,0,0.2)",
+        "xl": "0 40px 80px rgba(0,0,0,0.3)"
+      }
+    },
+    "metadata": {
+      "baseUrl": "https://kipazi.gnx.com",
+      "language": "en",
+      "region": "TZ",
+      "timezone": "Africa/Dar_es_Salaam",
+      "currency": "USD",
+      "currencySymbol": "$",
+      "measurementSystem": "metric"
+    },
+    "seo": {
+      "defaultTitle": "Kipazi Fusion | Premium Swahili Cuisine",
+      "defaultDescription": "Experience the fusion of ancestral Swahili recipes with modern culinary engineering in Dar es Salaam.",
+      "defaultKeywords": [
+        "swahili cuisine",
+        "molecular gastronomy",
+        "fine dining",
+        "east african food",
+        "culinary engineering"
+      ],
+      "social": {
+        "facebookAppId": "123456789",
+        "twitterHandle": "@kipazifusion",
+        "instagramHandle": "@kipazifusion"
+      },
+      "robots": "index, follow",
+      "sitemap": "https://kipazi.gnx.com/sitemap.xml",
+      "favicon": "https://kipazi.gnx.com/favicon.ico",
+      "manifest": "https://kipazi.gnx.com/manifest.json"
+    },
+    "analytics": {
+      "googleAnalyticsId": "UA-123456789-1",
+      "facebookPixelId": "1234567890",
+      "hotjarId": "1234567"
+    },
+    "integrations": {
+      "reservationSystem": "OpenTable",
+      "paymentGateway": "Stripe",
+      "emailService": "SendGrid",
+      "cdnProvider": "Cloudflare"
+    },
+    "performance": {
+      "imageOptimization": true,
+      "lazyLoading": true,
+      "codeSplitting": true,
+      "cacheTtl": 3600
+    }
+  },
+  "assets": {
+    "images": [
+      {
+        "id": "hero_bg",
+        "url": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1920",
+        "alt": "Kipazi Fusion restaurant interior",
+        "format": "jpg",
+        "size": "2.4MB",
+        "dimensions": {
+          "width": 1920,
+          "height": 1080
+        },
+        "tags": [
+          "hero",
+          "interior",
+          "restaurant"
+        ],
+        "optimized": true
+      },
+      {
+        "id": "dish_octopus",
+        "url": "https://images.unsplash.com/photo-1551028150-64b9f398f678?w=1200",
+        "alt": "Octopus Carpaccio with molecular lemon spheres",
+        "format": "jpg",
+        "size": "1.8MB",
+        "dimensions": {
+          "width": 1200,
+          "height": 800
+        },
+        "tags": [
+          "dish",
+          "seafood",
+          "signature"
+        ],
+        "optimized": true
+      },
+      {
+        "id": "team_juma",
+        "url": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=800",
+        "alt": "Juma Hamisi, Founder of Kipazi Fusion",
+        "format": "jpg",
+        "size": "1.2MB",
+        "dimensions": {
+          "width": 800,
+          "height": 800
+        },
+        "tags": [
+          "team",
+          "founder",
+          "portrait"
+        ],
+        "optimized": true
+      }
+    ],
+    "videos": [
+      {
+        "id": "hero_video",
+        "url": "https://assets.mixkit.co/videos/preview/mixkit-chef-preparing-vegetables-on-a-cutting-board-40743-large.mp4",
+        "thumbnail": "https://assets.mixkit.co/videos/preview/mixkit-chef-preparing-vegetables-on-a-cutting-board-40743-large.png",
+        "duration": "00:30",
+        "format": "mp4",
+        "size": "15MB",
+        "tags": [
+          "hero",
+          "cooking",
+          "background"
+        ],
+        "optimized": true
+      },
+      {
+        "id": "philosophy_video",
+        "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+        "thumbnail": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/BigBuckBunny.jpg",
+        "duration": "01:00",
+        "format": "mp4",
+        "size": "45MB",
+        "tags": [
+          "philosophy",
+          "story",
+          "background"
+        ],
+        "optimized": true
+      }
+    ],
+    "documents": [
+      {
+        "id": "menu_pdf",
+        "url": "https://kipazi.gnx.com/menu.pdf",
+        "title": "Kipazi Fusion Menu",
+        "format": "pdf",
+        "size": "3.2MB",
+        "pages": 12,
+        "tags": [
+          "menu",
+          "download",
+          "pdf"
+        ]
+      }
+    ]
+  },
+  "contentTypes": [
+    {
+      "id": "blog_post",
+      "name": "Article",
+      "description": "Blog posts and articles",
+      "icon": "📝",
+      "fields": [
+        {
+          "id": "slug",
+          "type": "SLUG",
+          "required": true,
+          "validation": {
+            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+            "min": 3,
+            "max": 60
+          }
+        },
+        {
+          "id": "title",
+          "type": "TEXT_SHORT",
+          "required": true,
+          "validation": {
+            "min": 10,
+            "max": 120
+          }
+        },
+        {
+          "id": "excerpt",
+          "type": "TEXT_LONG",
+          "required": true,
+          "validation": {
+            "min": 50,
+            "max": 300
+          }
+        },
+        {
+          "id": "content",
+          "type": "RICH_TEXT",
+          "required": true
+        },
+        {
+          "id": "cover",
+          "type": "IMAGE",
+          "required": true,
+          "validation": {
+            "aspectRatio": "16:9",
+            "minWidth": 1200
+          }
+        },
+        {
+          "id": "author",
+          "type": "REFERENCE",
+          "contentType": "team_member"
+        },
+        {
+          "id": "category",
+          "type": "TAG_SELECT",
+          "options": [
+            "Science",
+            "Engineering",
+            "Technology",
+            "Culture",
+            "Innovation"
+          ],
+          "multiple": false
+        },
+        {
+          "id": "tags",
+          "type": "TAG_SELECT",
+          "options": [
+            "Molecular Gastronomy",
+            "Swahili",
+            "Spices",
+            "Sustainability"
+          ],
+          "multiple": true
+        },
+        {
+          "id": "publishDate",
+          "type": "DATE_TIME",
+          "required": true
+        },
+        {
+          "id": "status",
+          "type": "SELECT",
+          "options": [
+            "draft",
+            "published",
+            "scheduled",
+            "archived"
+          ],
+          "default": "draft"
+        },
+        {
+          "id": "featured",
+          "type": "BOOLEAN",
+          "default": false
+        },
+        {
+          "id": "seoTitle",
+          "type": "TEXT_SHORT",
+          "help": "Custom SEO title (optional)"
+        },
+        {
+          "id": "seoDescription",
+          "type": "TEXT_LONG",
+          "help": "Custom SEO description (optional)"
+        },
+        {
+          "id": "readTime",
+          "type": "NUMBER",
+          "help": "Estimated reading time in minutes"
+        },
+        {
+          "id": "relatedPosts",
+          "type": "REFERENCE",
+          "contentType": "blog_post",
+          "multiple": true
+        }
+      ],
+      "permissions": {
+        "create": true,
+        "edit": true,
+        "delete": true,
+        "publish": true
+      }
+    },
+    {
+      "id": "team_member",
+      "name": "Team Member",
+      "description": "Team members and chefs",
+      "icon": "👨‍🍳",
+      "fields": [
+        {
+          "id": "name",
+          "type": "TEXT_SHORT",
+          "required": true
+        },
+        {
+          "id": "role",
+          "type": "TEXT_SHORT",
+          "required": true
+        },
+        {
+          "id": "bio",
+          "type": "RICH_TEXT",
+          "required": true
+        },
+        {
+          "id": "image",
+          "type": "IMAGE",
+          "required": true,
+          "validation": {
+            "aspectRatio": "1:1",
+            "minWidth": 800
+          }
+        },
+        {
+          "id": "email",
+          "type": "EMAIL"
+        },
+        {
+          "id": "phone",
+          "type": "PHONE"
+        },
+        {
+          "id": "socialLinks",
+          "type": "KEY_VALUE",
+          "keyLabel": "Platform",
+          "valueLabel": "URL"
+        },
+        {
+          "id": "expertise",
+          "type": "TAG_SELECT",
+          "multiple": true,
+          "options": [
+            "Molecular Gastronomy",
+            "Swahili Cuisine",
+            "Pastry",
+            "Mixology",
+            "Sustainability"
+          ]
+        },
+        {
+          "id": "yearsExperience",
+          "type": "NUMBER"
+        },
+        {
+          "id": "featured",
+          "type": "BOOLEAN",
+          "default": false
+        },
+        {
+          "id": "order",
+          "type": "NUMBER",
+          "help": "Display order (lower numbers first)"
+        }
+      ]
+    },
+    {
+      "id": "signature_dish",
+      "name": "Signature Dish",
+      "description": "Signature dishes and creations",
+      "icon": "🍽️",
+      "fields": [
+        {
+          "id": "name",
+          "type": "TEXT_SHORT",
+          "required": true
+        },
+        {
+          "id": "description",
+          "type": "RICH_TEXT",
+          "required": true
+        },
+        {
+          "id": "shortDescription",
+          "type": "TEXT_LONG",
+          "required": true
+        },
+        {
+          "id": "price",
+          "type": "CURRENCY",
+          "required": true
+        },
+        {
+          "id": "currency",
+          "type": "SELECT",
+          "options": [
+            "USD",
+            "EUR",
+            "TZS"
+          ],
+          "default": "USD"
+        },
+        {
+          "id": "image",
+          "type": "IMAGE",
+          "required": true,
+          "validation": {
+            "aspectRatio": "4:3"
+          }
+        },
+        {
+          "id": "gallery",
+          "type": "IMAGE",
+          "multiple": true
+        },
+        {
+          "id": "category",
+          "type": "SELECT",
+          "options": [
+            "Appetizer",
+            "Main Course",
+            "Dessert",
+            "Drink"
+          ],
+          "required": true
+        },
+        {
+          "id": "tags",
+          "type": "TAG_SELECT",
+          "multiple": true,
+          "options": [
+            "Chef's Choice",
+            "Innovative",
+            "Premium",
+            "Spicy",
+            "Vegetarian",
+            "Vegan"
+          ]
+        },
+        {
+          "id": "ingredients",
+          "type": "LIST",
+          "itemType": "TEXT_SHORT"
+        },
+        {
+          "id": "allergens",
+          "type": "TAG_SELECT",
+          "multiple": true,
+          "options": [
+            "Gluten",
+            "Dairy",
+            "Nuts",
+            "Shellfish",
+            "Soy"
+          ]
+        },
+        {
+          "id": "prepTime",
+          "type": "NUMBER",
+          "help": "Preparation time in minutes"
+        },
+        {
+          "id": "spiceLevel",
+          "type": "SELECT",
+          "options": [
+            "Mild",
+            "Medium",
+            "Hot",
+            "Very Hot"
+          ]
+        },
+        {
+          "id": "seasonal",
+          "type": "BOOLEAN",
+          "default": false
+        },
+        {
+          "id": "available",
+          "type": "BOOLEAN",
+          "default": true
+        },
+        {
+          "id": "order",
+          "type": "NUMBER"
+        }
+      ]
+    },
+    {
+      "id": "event",
+      "name": "Event",
+      "description": "Special events and tastings",
+      "icon": "📅",
+      "fields": [
+        {
+          "id": "title",
+          "type": "TEXT_SHORT",
+          "required": true
+        },
+        {
+          "id": "description",
+          "type": "RICH_TEXT",
+          "required": true
+        },
+        {
+          "id": "date",
+          "type": "DATE_TIME",
+          "required": true
+        },
+        {
+          "id": "endDate",
+          "type": "DATE_TIME"
+        },
+        {
+          "id": "location",
+          "type": "TEXT_SHORT"
+        },
+        {
+          "id": "image",
+          "type": "IMAGE"
+        },
+        {
+          "id": "price",
+          "type": "CURRENCY"
+        },
+        {
+          "id": "capacity",
+          "type": "NUMBER"
+        },
+        {
+          "id": "booked",
+          "type": "NUMBER",
+          "default": 0
+        },
+        {
+          "id": "status",
+          "type": "SELECT",
+          "options": [
+            "upcoming",
+            "ongoing",
+            "completed",
+            "cancelled"
+          ]
+        },
+        {
+          "id": "registrationLink",
+          "type": "URL"
+        }
+      ]
+    },
+    {
+      "id": "testimonial",
+      "name": "Testimonial",
+      "description": "Customer testimonials and reviews",
+      "icon": "⭐",
+      "fields": [
+        {
+          "id": "author",
+          "type": "TEXT_SHORT",
+          "required": true
+        },
+        {
+          "id": "role",
+          "type": "TEXT_SHORT"
+        },
+        {
+          "id": "content",
+          "type": "TEXT_LONG",
+          "required": true
+        },
+        {
+          "id": "rating",
+          "type": "NUMBER",
+          "validation": {
+            "min": 1,
+            "max": 5
+          }
+        },
+        {
+          "id": "image",
+          "type": "IMAGE"
+        },
+        {
+          "id": "date",
+          "type": "DATE"
+        },
+        {
+          "id": "featured",
+          "type": "BOOLEAN",
+          "default": false
+        },
+        {
+          "id": "verified",
+          "type": "BOOLEAN",
+          "default": false
+        }
+      ]
+    },
+    {
+      "id": "gallery_item",
+      "name": "Gallery Item",
+      "description": "Photo gallery items",
+      "icon": "🖼️",
+      "fields": [
+        {
+          "id": "title",
+          "type": "TEXT_SHORT"
+        },
+        {
+          "id": "description",
+          "type": "TEXT_LONG"
+        },
+        {
+          "id": "image",
+          "type": "IMAGE",
+          "required": true
+        },
+        {
+          "id": "category",
+          "type": "SELECT",
+          "options": [
+            "Food",
+            "Interior",
+            "Events",
+            "Team",
+            "Ingredients"
+          ]
+        },
+        {
+          "id": "featured",
+          "type": "BOOLEAN",
+          "default": false
+        },
+        {
+          "id": "date",
+          "type": "DATE"
+        }
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "id": "home",
+      "name": "Home",
+      "path": "/",
+      "status": "published",
+      "layout": "default",
+      "template": "home_v2",
+      "seo": {
+        "title": "Kipazi Fusion | The Future of Swahili Cuisine",
+        "description": "Culinary Engineering Meets Swahili Heritage in Dar es Salaam. Experience ancestral recipes reimagined through modern techniques.",
+        "ogImage": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200",
+        "keywords": [
+          "fine dining",
+          "molecular gastronomy",
+          "swahili cuisine",
+          "dar es salaam",
+          "culinary innovation"
+        ],
+        "canonical": "https://kipazi.gnx.com",
+        "metaTags": [
+          {
+            "name": "twitter:card",
+            "content": "summary_large_image"
+          },
+          {
+            "name": "twitter:site",
+            "content": "@kipazifusion"
+          }
+        ]
+      },
+      "sections": [
+        {
+          "id": "hero_v2",
+          "type": "STATIC_FORM",
+          "label": "Hero Section",
+          "settings": {
+            "backgroundType": "video",
+            "overlay": true,
+            "overlayOpacity": 0.3,
+            "textColor": "white",
+            "alignment": "center",
+            "padding": {
+              "top": "xl",
+              "bottom": "xl"
+            }
+          },
+          "fields": [
+            {
+              "id": "headline",
+              "label": "Main Headline",
+              "type": "TEXT_SHORT",
+              "required": true,
+              "defaultValue": "Culinary Engineering Meets Swahili Heritage"
+            },
+            {
+              "id": "subtext",
+              "label": "Supporting Text",
+              "type": "TEXT_LONG",
+              "required": true,
+              "defaultValue": "We decode ancestral recipes and reconstruct them through modern techniques. Experience the high-fidelity taste of East Africa."
+            },
+            {
+              "id": "primary_cta",
+              "label": "Primary Button Text",
+              "type": "TEXT_SHORT",
+              "defaultValue": "Book a Table"
+            },
+            {
+              "id": "primary_cta_link",
+              "label": "Primary Button Link",
+              "type": "URL",
+              "defaultValue": "/reservations"
+            },
+            {
+              "id": "secondary_cta",
+              "label": "Secondary Button Text",
+              "type": "TEXT_SHORT",
+              "defaultValue": "Watch Film"
+            },
+            {
+              "id": "secondary_cta_link",
+              "label": "Secondary Button Link",
+              "type": "URL",
+              "defaultValue": "/about#video"
+            },
+            {
+              "id": "bg_video",
+              "label": "Background Video",
+              "type": "VIDEO",
+              "defaultValue": "https://commondatastorage.googleapis.com/gtv-videos-bucket/CastVideos/dash/ForBiggerBlazesVideo.mp4"
+            },
+            {
+              "id": "bg_image",
+              "label": "Fallback Image",
+              "type": "IMAGE",
+              "defaultValue": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1920"
+            },
+            {
+              "id": "overlay_color",
+              "label": "Overlay Color",
+              "type": "COLOR",
+              "defaultValue": "#000000"
+            },
+            {
+              "id": "overlay_opacity",
+              "label": "Overlay Opacity",
+              "type": "NUMBER",
+              "defaultValue": 0.4,
+              "validation": {
+                "min": 0,
+                "max": 1,
+                "step": 0.1
+              }
+            }
+          ]
+        },
+        {
+          "id": "brand_stats",
+          "type": "DYNAMIC_LIST",
+          "label": "Trust Metrics",
+          "settings": {
+            "layout": "grid",
+            "columns": 4,
+            "spacing": "lg",
+            "animation": "fade-up"
+          },
+          "items": [
+            {
+              "id": "stat_1",
+              "label": "Michelin Stars",
+              "value": "2",
+              "suffix": "*",
+              "description": "Awarded for culinary excellence",
+              "icon": "star"
+            },
+            {
+              "id": "stat_2",
+              "label": "Organic Spices",
+              "value": "120",
+              "suffix": "+",
+              "description": "Locally sourced ingredients",
+              "icon": "leaf"
+            },
+            {
+              "id": "stat_3",
+              "label": "Happy Guests",
+              "value": "50",
+              "suffix": "k",
+              "description": "Served since 1994",
+              "icon": "users"
+            },
+            {
+              "id": "stat_4",
+              "label": "Precision Grade",
+              "value": "99.9",
+              "suffix": "%",
+              "description": "Consistency in every dish",
+              "icon": "target"
+            }
+          ]
+        },
+        {
+          "id": "signature_dishes",
+          "type": "DYNAMIC_LIST",
+          "label": "Signature Dishes",
+          "contentType": "signature_dish",
+          "settings": {
+            "layout": "carousel",
+            "showCategoryFilter": true,
+            "limit": 6,
+            "autoplay": true,
+            "autoplaySpeed": 5000
+          },
+          "items": [
+            {
+              "id": "d1",
+              "name": "Octopus Carpaccio",
+              "shortDescription": "Zanzibar octopus with molecular lemon spheres",
+              "description": "<p>Featuring Zanzibar octopus, charcoal-infused oil, and molecular lemon spheres that burst with flavor. A perfect blend of traditional Swahili seafood preparation with modernist techniques.</p><ul><li>Locally sourced octopus from Zanzibar</li><li>Charcoal-infused avocado oil</li><li>Molecular lemon spheres</li><li>Edible flowers and micro herbs</li></ul>",
+              "price": 28,
+              "currency": "USD",
+              "category": "Appetizer",
+              "tags": [
+                "Chef's Choice",
+                "Innovative",
+                "Seafood"
+              ],
+              "image": "https://images.unsplash.com/photo-1551028150-64b9f398f678?w=1200",
+              "gallery": [
+                "https://images.unsplash.com/photo-1551028150-64b9f398f678?w=800",
+                "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=800"
+              ],
+              "ingredients": [
+                "Zanzibar octopus",
+                "Charcoal-infused oil",
+                "Lemon spheres",
+                "Micro herbs",
+                "Sea salt"
+              ],
+              "allergens": [
+                "Shellfish"
+              ],
+              "prepTime": 25,
+              "spiceLevel": "Mild",
+              "seasonal": false,
+              "available": true,
+              "order": 1
+            },
+            {
+              "id": "d2",
+              "name": "Deconstructed Pilau",
+              "shortDescription": "7-spice foam with Wagyu beef",
+              "description": "<p>A modernist interpretation of the traditional Swahili pilau. Features 7-spice foam, basmati crunch, and 48-hour slow-cooked Wagyu beef.</p>",
+              "price": 34,
+              "currency": "USD",
+              "category": "Main Course",
+              "tags": [
+                "Innovative",
+                "Premium",
+                "Modernist"
+              ],
+              "image": "https://i0.wp.com/www.jocajic.com/wp-content/uploads/2017/01/IMG_20200728_083814_956-1.jpg?fit=1024%2C1024&ssl=1",
+              "ingredients": [
+                "Wagyu beef",
+                "Basmati rice",
+                "7-spice blend",
+                "Coconut foam",
+                "Caramelized onions"
+              ],
+              "allergens": [],
+              "prepTime": 48,
+              "spiceLevel": "Medium",
+              "seasonal": false,
+              "available": true,
+              "order": 2
+            },
+            {
+              "id": "d3",
+              "name": "Molecular Mango Mousse",
+              "shortDescription": "Tanzanian mango with passion fruit caviar",
+              "description": "<p>A tropical dessert featuring Tanzanian mango mousse paired with passion fruit caviar and coconut tuile.</p>",
+              "price": 16,
+              "currency": "USD",
+              "category": "Dessert",
+              "tags": [
+                "Innovative",
+                "Vegan",
+                "Tropical"
+              ],
+              "image": "https://images.unsplash.com/photo-1505253210343-6d4c5f3f3e2b?w=1200",
+              "ingredients": [
+                "Tanzanian mango",
+                "Coconut milk",
+                "Passion fruit",
+                "Agar-agar",
+                "Edible flowers"
+              ],
+              "allergens": [
+                "Coconut"
+              ],
+              "prepTime": 15,
+              "spiceLevel": "Mild",
+              "seasonal": true,
+              "available": true,
+              "order": 3
+            }
+          ]
+        },
+        {
+          "id": "featured_testimonials",
+          "type": "DYNAMIC_LIST",
+          "label": "Featured Reviews",
+          "contentType": "testimonial",
+          "settings": {
+            "layout": "slider",
+            "limit": 3,
+            "autoplay": true,
+            "showRating": true
+          },
+          "items": [
+            {
+              "id": "t1",
+              "author": "Michael Chen",
+              "role": "Food Critic, Culinary Times",
+              "content": "Kipazi Fusion redefines East African cuisine. The molecular techniques applied to traditional recipes create an unforgettable dining experience.",
+              "rating": 5,
+              "image": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400",
+              "date": "2025-12-15",
+              "featured": true,
+              "verified": true
+            },
+            {
+              "id": "t2",
+              "author": "Amina Yusuf",
+              "role": "Travel Blogger, Taste of Tanzania",
+              "content": "From the moment I stepped into Kipazi Fusion, I was transported. The fusion of flavors and the innovative presentation blew me away.",
+              "rating": 4,
+              "image": "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=400",
+              "date": "2025-11-20",
+              "featured": true,
+              "verified": true
+            },
+            {
+              "id": "t3",
+              "author": "David Mwangi",
+              "role": "Chef, Nairobi Gourmet",
+              "content": "Kipazi Fusion is a beacon of culinary innovation in East Africa. Their dedication to quality and creativity is truly inspiring.",
+              "rating": 5,
+              "image": "https://images.unsplash.com/photo-1527980965255-d3b416303d12?w=400",
+              "date": "2025-10-05",
+              "featured": true,
+              "verified": true
+            }
+          ]
+        },
+        {
+          "id": "philosophy",
+          "type": "STATIC_FORM",
+          "label": "Brand Philosophy",
+          "settings": {
+            "layout": "split",
+            "background": "gradient",
+            "textAlignment": "center"
+          },
+          "fields": [
+            {
+              "id": "video_url",
+              "label": "Philosophy Video",
+              "type": "VIDEO",
+              "defaultValue": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+            },
+            {
+              "id": "quote",
+              "label": "Founder's Quote",
+              "type": "RICH_TEXT",
+              "defaultValue": "<blockquote>Cooking is the only art form that hits all five senses simultaneously. We make sure they all scream in joy.</blockquote>"
+            },
+            {
+              "id": "author",
+              "label": "Author",
+              "type": "TEXT_SHORT",
+              "defaultValue": "Juma Hamisi"
+            },
+            {
+              "id": "role",
+              "label": "Role",
+              "type": "TEXT_SHORT",
+              "defaultValue": "Founder & Visionary"
+            },
+            {
+              "id": "cta_text",
+              "label": "Learn More Button",
+              "type": "TEXT_SHORT",
+              "defaultValue": "Our Story"
+            },
+            {
+              "id": "cta_link",
+              "label": "Learn More Link",
+              "type": "URL",
+              "defaultValue": "/about"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "menu",
+      "name": "Menu",
+      "path": "/menu",
+      "status": "published",
+      "seo": {
+        "title": "Menu | Kipazi Fusion",
+        "description": "Explore our innovative menu featuring Swahili cuisine reimagined through molecular gastronomy.",
+        "ogImage": "https://images.unsplash.com/photo-1544025162-d76694265947?w=1200"
+      },
+      "sections": [
+        {
+          "id": "menu_categories",
+          "type": "DYNAMIC_LIST",
+          "label": "Menu Categories",
+          "contentType": "signature_dish",
+          "settings": {
+            "groupBy": "category",
+            "showFilters": true,
+            "showPrices": true,
+            "layout": "grid"
+          },
+          "items": [
+            {
+              "id": "appetizers",
+              "name": "Appetizers",
+              "dishes": [
+                {
+                  "id": "d1",
+                  "name": "Octopus Carpaccio",
+                  "shortDescription": "Zanzibar octopus with molecular lemon spheres",
+                  "price": 28,
+                  "currency": "USD",
+                  "image": "https://images.unsplash.com/photo-1551028150-64b9f398f678?w=1200"
+                }
+              ]
+            },
+            {
+              "id": "main_courses",
+              "name": "Main Courses",
+              "dishes": [
+                {
+                  "id": "d2",
+                  "name": "Deconstructed Pilau",
+                  "shortDescription": "7-spice foam with Wagyu beef",
+                  "price": 34,
+                  "currency": "USD",
+                  "image": "https://i0.wp.com/www.jocajic.com/wp-content/uploads/2017/01/IMG_20200728_083814_956-1.jpg?fit=1024%2C1024&ssl=1"
+                }
+              ]
+            },
+            {
+              "id": "desserts",
+              "name": "Desserts",
+              "dishes": [
+                {
+                  "id": "d3",
+                  "name": "Molecular Mango Mousse",
+                  "shortDescription": "Tanzanian mango with passion fruit caviar",
+                  "price": 16,
+                  "currency": "USD",
+                  "image": "https://images.unsplash.com/photo-1505253210343-6d4c5f3f3e2b?w=1200"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "about",
+      "name": "About",
+      "path": "/about",
+      "status": "published",
+      "seo": {
+        "title": "Our Story | Kipazi Fusion",
+        "description": "From a spice stall in Stone Town to a molecular gastronomy lab in Dar es Salaam."
+      },
+      "sections": [
+        {
+          "id": "about_hero_v2",
+          "type": "STATIC_FORM",
+          "label": "About Hero: Legacy & Precision",
+          "fields": [
+            {
+              "id": "title",
+              "label": "Main Headline",
+              "type": "TEXT_SHORT",
+              "defaultValue": "Engineering Flavor Since 1994"
+            },
+            {
+              "id": "subtitle",
+              "label": "Supporting Statement",
+              "type": "TEXT_LONG",
+              "defaultValue": "From a three-table spice stall in Stone Town to a molecular gastronomy lab redefining Swahili cuisine."
+            },
+            {
+              "id": "hero_image",
+              "label": "Hero Background Image",
+              "type": "IMAGE",
+              "defaultValue": "https://images.unsplash.com/photo-1559339352-11d035aa65de?w=1600"
+            },
+            {
+              "id": "overlay_color",
+              "label": "Overlay Color",
+              "type": "COLOR",
+              "defaultValue": "rgba(0,0,0,0.55)"
+            },
+            {
+              "id": "cta_primary",
+              "label": "Primary CTA Text",
+              "type": "TEXT_SHORT",
+              "defaultValue": "Meet the Masters"
+            },
+            {
+              "id": "cta_primary_link",
+              "label": "Primary CTA Link",
+              "type": "TEXT_SHORT",
+              "defaultValue": "#team_masters"
+            }
+          ]
+        },
+        {
+          "id": "team",
+          "type": "DYNAMIC_LIST",
+          "label": "Our Team",
+          "contentType": "team_member",
+          "settings": {
+            "layout": "grid",
+            "columns": 3,
+            "showSocial": true,
+            "filterByRole": false
+          },
+          "items": [
+            {
+              "name": "Juma Hamisi",
+              "role": "Founder & Visionary",
+              "bio": "Born into a lineage of spice merchants, Juma blends ancestral Swahili cooking with systems thinking and precision engineering.",
+              "image": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=800&auto=format&fit=crop"
+            },
+            {
+              "name": "Dr. Sarah Chen",
+              "role": "Chief Flavor Scientist",
+              "bio": "PhD in Molecular Gastronomy. Specializes in aroma chemistry, spice extraction, and thermal reaction modeling.",
+              "image": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800"
+            },
+            {
+              "name": "Amani Nyerere",
+              "role": "Head of Culinary Engineering",
+              "bio": "Bridges tradition and technology by translating Swahili recipes into repeatable, high-fidelity cooking systems.",
+              "image": "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=800"
+            }
+          ]
+        },
+        {
+          "id": "timeline",
+          "type": "DYNAMIC_LIST",
+          "label": "Our Journey",
+          "settings": {
+            "layout": "timeline",
+            "direction": "vertical"
+          },
+          "items": [
+            {
+              "year": "1994",
+              "title": "The First Flame",
+              "description": "Founder Juma Hamisi opens a 3-table eatery in Stone Town, Zanzibar, focusing on authentic Swahili pilau.",
+              "image": "https://images.unsplash.com/photo-1585937421612-70ca003675ed?w=800"
+            },
+            {
+              "year": "2010",
+              "title": "Molecular Shift",
+              "description": "We integrate our first food-science lab to analyze spice chemistry and develop modern techniques.",
+              "image": "https://images.unsplash.com/photo-1582719508461-905c673771fd?w-800"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "blog",
+      "name": "Insights",
+      "path": "/blog",
+      "status": "published",
+      "seo": {
+        "title": "Culinary Journal | Molecular Insights",
+        "description": "Scientific articles on Swahili spices and high-tech farming."
+      },
+      "sections": [
+        {
+          "id": "blog_posts",
+          "type": "DYNAMIC_LIST",
+          "label": "Articles",
+          "contentType": "blog_post",
+          "settings": {
+            "layout": "grid",
+            "postsPerPage": 9,
+            "showCategories": true,
+            "showDates": true,
+            "showAuthors": true,
+            "pagination": true
+          },
+          "items": [
+            {
+              "slug": "science-of-swahili-spices",
+              "title": "The Science of Swahili Spices",
+              "excerpt": "Exploring the molecular profiles of traditional Swahili spices.",
+              "date": "2024-01-15",
+              "author": "Dr. Sarah Chen",
+              "category": "Research",
+              "image": "https://images.unsplash.com/photo-1585937421612-70ca003675ed?w=800"
+            },
+            {
+              "slug": "molecular-gastronomy-in-tanzania",
+              "title": "Molecular Gastronomy in Tanzania",
+              "excerpt": "How we're applying modern techniques to ancient recipes.",
+              "date": "2024-02-20",
+              "author": "Juma Hamisi",
+              "category": "Innovation",
+              "image": "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=800"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "navigation": {
+    "main": [
+      {
+        "label": "Home",
+        "url": "/",
+        "icon": "home"
+      },
+      {
+        "label": "Menu",
+        "url": "/menu",
+        "icon": "utensils"
+      },
+      {
+        "label": "About",
+        "url": "/about",
+        "icon": "users"
+      },
+      {
+        "label": "Blog",
+        "url": "/blog",
+        "icon": "book"
+      },
+      {
+        "label": "Contact",
+        "url": "/contact",
+        "icon": "phone"
+      }
+    ],
+    "footer": {
+      "columns": [
+        {
+          "title": "Kipazi Fusion",
+          "links": [
+            {
+              "label": "Our Story",
+              "url": "/about"
+            },
+            {
+              "label": "Team",
+              "url": "/about#team"
+            },
+            {
+              "label": "Careers",
+              "url": "/careers"
+            },
+            {
+              "label": "Press",
+              "url": "/press"
+            }
+          ]
+        },
+        {
+          "title": "Experience",
+          "links": [
+            {
+              "label": "Menu",
+              "url": "/menu"
+            },
+            {
+              "label": "Reservations",
+              "url": "/reservations"
+            },
+            {
+              "label": "Private Dining",
+              "url": "/private-dining"
+            },
+            {
+              "label": "Gift Cards",
+              "url": "/gift-cards"
+            }
+          ]
+        }
+      ],
+      "social": [
+        {
+          "platform": "instagram",
+          "url": "https://instagram.com/kipazifusion",
+          "icon": "instagram"
+        },
+        {
+          "platform": "facebook",
+          "url": "https://facebook.com/kipazifusion",
+          "icon": "facebook"
+        },
+        {
+          "platform": "twitter",
+          "url": "https://twitter.com/kipazifusion",
+          "icon": "twitter"
+        }
+      ]
+    }
+  },
+  "settings": {
+    "site": {
+      "maintenanceMode": false,
+      "comingSoon": false,
+      "allowComments": true,
+      "allowRegistrations": false
+    },
+    "business": {
+      "name": "Kipazi Fusion Ltd.",
+      "address": "Ocean Road, Dar es Salaam, Tanzania",
+      "phone": "+255 123 456 789",
+      "email": "info@kipazifusion.com",
+      "openingHours": {
+        "monday": "18:00-23:00",
+        "tuesday": "18:00-23:00",
+        "wednesday": "18:00-23:00",
+        "thursday": "18:00-23:00",
+        "friday": "18:00-00:00",
+        "saturday": "18:00-00:00",
+        "sunday": "Closed"
+      }
+    },
+    "forms": {
+      "contact": {
+        "enabled": true,
+        "recipient": "info@kipazifusion.com",
+        "fields": [
+          "name",
+          "email",
+          "subject",
+          "message"
+        ]
+      },
+      "reservation": {
+        "enabled": true,
+        "maxPartySize": 12,
+        "advanceDays": 30,
+        "confirmationEmail": true
+      }
+    },
+    "cache": {
+      "enabled": true,
+      "duration": 3600,
+      "clearOnPublish": true
+    }
+  }
+}
